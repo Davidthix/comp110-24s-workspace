@@ -1,4 +1,4 @@
-"""Second battleship program"""
+"""Second battleship program."""
 
 __author__ = "730664354"
 
@@ -11,16 +11,17 @@ while guess_row > grid_size or guess_row < 1:
     guess_row = int(input(f"The grid is only {grid_size} by {grid_size}. Try again: "))
 
 guess_column: int = int(input("Guess a column: "))
-while guess_column > grid_size or guess_column < 1:
-    guess_column = int(input("The grid is only {grid_size} by {grid_size}. Try again: "))
+while guess_column > grid_size or gueresults_box: str = RED_BOXss_column < 1:
+    guess_column = int(input(f"The grid is only {grid_size} by {grid_size}. Try again: "))
 
 BLUE_BOX: str = "\U0001F7E6"
 RED_BOX: str = "\U0001F7E5"
 WHITE_BOX: str = "\U00002B1C"
+results_box: str = ""
 if guess_row == secret_row and guess_column == secret_column:
-    results_box: str = RED_BOX
+    results_box = RED_BOX
 else:
-    results_box: str = WHITE_BOX
+    results_box = WHITE_BOX
 
 row_idx: int = 1
 
