@@ -11,7 +11,7 @@ while guess_row > grid_size or guess_row < 1:
     guess_row = int(input(f"The grid is only {grid_size} by {grid_size}. Try again: "))
 
 guess_column: int = int(input("Guess a column: "))
-while guess_column > grid_size or gueresults_box: str = RED_BOXss_column < 1:
+while guess_column > grid_size or guess_column < 1:
     guess_column = int(input(f"The grid is only {grid_size} by {grid_size}. Try again: "))
 
 BLUE_BOX: str = "\U0001F7E6"
